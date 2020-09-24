@@ -13,7 +13,7 @@
     <meta charset="UTF-8"> <!--Codificación al español-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala los elementos para cualquier dispositvo (celular,ordenador,etc) -->
     <title>Inicio</title> <!--Titulo de la pestaña-->
-    <link rel="shortcut icon" href="images/iconoVendoKosas.png"> <!--icono de la pestaña-->
+    <link rel="shortcut icon" href="images/logoRecyclus.png"> <!--icono de la pestaña-->
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.3.2/sweetalert2.css">
