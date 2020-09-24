@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Recyclus</title>
+  <link rel="shortcut icon" href="images/logoRecyclus.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.3.2/sweetalert2.css">
+  <link rel="stylesheet" href="css/landingPageStyles.css">
+</head>
+<body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper green darken-2">
+          <a href="#" class="brand-logo flow-text">Recyclus</a>
+          <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="modal-trigger" href="#quienesSomos">¿Quiénes Somos?</a></li>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#servicios">Aportación</a></li>
+            <li><a href="#contacto"> <i class="material-icons left">contact_phone</i>Contacto</a></li>
+          </ul>
+      </nav>
+    </div>
+    <ul class="side-nav" id="mobile">
+      <li><a class="modal-trigger" href="#quienesSomos">¿Quiénes Somos?</a></li>
+      <li><a href="#oferta">Oferta</a></li>
+      <li><a href="#servicios">Aportación</a></li>
+      <li><a href="#contacto"> <i class="material-icons left">contact_phone</i>Contacto</a></li>
+    </ul>
+    <div class="parallax-container">
+      <center>
+        <img class="logoRecyclus hoverable circle" src="images/logoRecyclus.png" alt="Logo Recyclus">
+      </center>
+      <div class="parallax"><img src="https://www.esan.edu.pe/apuntes-empresariales/2016/04/20/gestionambiental_principal.jpg"></div>
+    </div>
+    <div class="nocturno white-text section scrollspy"  id="oferta">
+      <div class="row container">
+        <div class="col l8 s12 center">
+          <h4 class="center-align">¡Es hora de reciclar!</h4>
+          <p class="flow-text center-align"><b>El mundo arrojó 53,6 millones de toneladas de basura electrónica en 2019</b></p>
+          <p class="flow-text center-align">La cifra fue entregada por el informe del Global E-waste Monitor 2020. El documento también detalló que solo el 17,4 % de los desechos electrónicos fueron reciclados, lo que equivale a la pérdida de 57 mil millones de dólares en materiales recuperables.</p>
+          <p class="flow-text center-align">Entra a nuestra plataforma y sé parte del cambio</p>
+          <a class="waves-effect waves-light btn-large cyan pulse" href="registro.php" target="_blank" style="margin: 10px;"><i class="material-icons left">language</i>Regístrate aquí</a>
+        </div>
+        <div class="col l4 s12 center">
+          <br>
+          <img class="circle hoverable seccionImagen" src="images/seccionBeneficios.png" alt="Crecer tu negocio">
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://www.esciupfnews.com/wp-content/uploads/2020/05/dia-mundial-del-reciclaje-2020.jpg"></div>
+    </div>
+    <div class="section light-blue section scrollspy" id="servicios">
+      <div class="row container">
+        <div class="col s12">
+          <h4 class="white-text center-align">¿Qué productos o desechos son aceptados?</h4>
+        </div>
+        <div class="col l4 m6 s12">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://cdn.pixabay.com/photo/2017/08/10/03/48/nexus-2617873_1280.jpg" style='width: 100%; height: 200px; object-fit: cover;'>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Electrónicos<i class="material-icons right">more_vert</i></span>
+              <p><a class="activator" href="#electronico">Más informacion</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Información</span>
+              <p>Ganas más puntos según gama, marca y tiempo de uso de tu dispositivo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col l4 m6 s12">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://fotografias-compromiso.atresmedia.com/clipping/cmsimages01/2017/01/05/53F06CDA-E08D-4829-A43E-098656466EED/58.jpg" style='width: 100%; height: 200px; object-fit: cover;'>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Órganicos<i class="material-icons right">more_vert</i></span>
+              <p><a class="activator" href="#organico">Más informacion</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Información</span>
+              <p>Serán medidos por kilogramo, y dependiendo del peso, más puntos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col l4 m12 s12">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://www.ecoticias.com/userfiles/extra/WZZS_200_.jpg" style='width: 100%; height: 200px; object-fit: cover;'>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Inórganicos<i class="material-icons right">more_vert</i></span>
+              <p><a class="activator" href="#plastico">Más informacion</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Información</span>
+              <p>A los desechos plásticos, de papel/cartón, y vidrio, separados por tipo y vendidos por cantidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://ecologiautil.com/wp-content/uploads/2015/02/Ecologia-Util.jpg"></div>
+    </div>
+    <div class="section cyan darken-1 section scrollspy" id="contacto">
+      <div class="row container">
+        <h4 class="center-align white-text">Contacto <i class="material-icons">contact_phone</i></h4>
+        <h5 class="center-align white-text" id="textoFormContact">Desde este formulario usted puede contactarnos o por vía Whatsapp al: (52) 55 6787-9498</h5>
+        <div class="card hoverable col s12 card-opacity animate__animated animate__fadeIn animate__delay-2s"> <!--Tarjeta que contiene los inputs-->
+          <form id="formContact">
+            <div class="card-content"> <!--Contenido de la tarjeta-->
+              <div class="row">
+                <div class="input-field col l6 m6 s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input type="text" class="validate" name="nombreCliente" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,150}"  maxlength="150" required>
+                  <label for="nombreCliente">Ingrese nombre completo</label>
+                </div>
+                <div class="input-field col l6 m6 s12">
+                  <i class="material-icons prefix">phone</i>
+                  <input type="tel" class="validate" name="telefonoCliente" pattern="[0-9]{1,10}"  maxlength="10" required>
+                  <label for="icon_telephone">Ingrese su teléfono (10 dígitos)</label>
+                </div>
+                <div class="input-field col l6 m6 s12">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" class="validate" name="emailCliente" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,60}" maxlength="60" required>
+                  <label for="email" data-error="Error, email no válido" data-success="Email válido">Ingrese su email</label>
+                </div>
+                <div class="input-field col l6 m6 s12">
+                  <i class="material-icons prefix">subject</i>
+                  <input type="text" class="validate" name="asunto" pattern="[A-Za-z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}" maxlength="50" required>
+                  <label for="asunto">Ingrese asunto</label>
+                </div>
+                <div class="input-field col l6 s12">
+                  <i class="material-icons prefix">message</i>
+                  <textarea name="mensaje" class=" validate materialize-textarea" data-length="500" maxlength="500" required></textarea>
+                  <label for="mensaje">Ingrese su mensaje</label>
+                </div>
+                <div class="input-field col l6 s12">
+                  <i class="material-icons prefix">contacts</i>
+                  <select id="tipoContacto" name="tipoContacto" required>
+                    <option value="" disabled selected>Escoge una opción</option>
+                    <option value="1">Email</option>
+                    <option value="2">Whatsapp</option>
+                    <option value="3">Ambos</option>
+                  </select>
+                  <label for="tipoContacto">Seleccione el tipo de contacto</label>
+                </div>
+              </div>
+            </div>
+            <div class="card-action center-align">
+              <button class="btn-flat grey-text waves-effect" type="reset" style="margin: 10px"> Limpiar Campos</button>
+              <button type="submit" class="btn waves-effect waves-light green" style="margin: 10px">Contactar
+                <i class="material-icons right">contact_mail</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <div class="section cyan darken-1">
+    <div id="quienesSomos" class="modal modal-fixed-footer">
+      <div class="modal-content yellow lighten-4">
+        <div class="row">
+          <div class="col s12">
+            <h4 class="center-align">¿Quiénes Somos?</h4>
+            <center>
+              <img src="images/logoRecyclus.png" alt="Equipo Recyclus" id="logoRecyclus">
+            </center>
+            <p align="justify" style="font-size: 16px;">Recyclus es una empresa preocupada por el cuidado al medio ambiente que propone el intercambio de objetos que ya no se utilicen o que ya no sirvan, para entregárselo a las empresas de ese rubro y que éstas los utilicen reciclando el material; a cambio de un beneficio para el individuo.</p>
+          </div>
+          <div class="col s12">
+            <h4 class="center-align">Objetivo <i class="material-icons">location_searching</i></h4>
+            <p align="justify" style="font-size: 16px;">....</p>
+          </div>
+          <div class="col xl6 l12 m12 s12 center">
+            <h4 class="center-align">Misión <i class="material-icons">account_balance</i></h4>
+            <img src="images/mision.png" alt="" id="misionImagen">
+            <p align="center" style="font-size: 16px;"> ...</p>
+          </div>
+          <div class="col xl6 l12 m12 s12 center">
+            <h4 class="center-align">Visión <i class="material-icons">remove_red_eye</i></h4>
+            <img src="images/vision.png" alt="" id="visionImagen">
+            <p align="center" style="font-size: 16px;">...</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer yellow lighten-2">
+        <a href="#contacto" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="$('.button-collapse').sideNav('hide');">Contáctanos</a>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer fixed green darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 m6 s12">
+          <span class="white-text textoFooter">¡Porque juntos hacemos un mundo mejor!</span>
+        </div>
+        <div class="col l4 m6 s12">
+          <h5 class="white-text">Redes Sociales</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!" onclick="Materialize.toast('Whatsapp: (52) 55-6787-9498', 10000)"><img class="social-left" src="images/iconoWhatsapp.png" alt="Whatsapp"> Whatsapp</a>
+              <a class="grey-text text-lighten-3" target="_blank"href="https://facebook.com" id="textoSocial"><img class="social-right" src="images/iconoFB.png" alt="Facebook"> Facebook</a>
+            </li>
+            <br>
+            <li>
+              <a class="grey-text text-lighten-3" target="_blank" href="#!"><img class="social-left" src="images/iconoInstagram.png" alt="Instagram"> Instagram</a>
+              <a class="grey-text text-lighten-3" target="_blank" href="#!"><img class="social-right" src="images/iconoTwitter.png" alt="Twitter"> Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2020 Recyclus
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.3.2/sweetalert2.js" charset="utf-8"></script>
+  <script src="js/contactoScript.js"></script>
+  <script src="js/landingPageScript.js"></script>
+</body>
+</html>

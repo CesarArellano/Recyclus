@@ -1,0 +1,71 @@
+html
+{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,'Nanum Gothic', Arial, "Lucida Grande", sans-serif !important;
+}
+
+
+@media screen and (min-width: 1201px){
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+
+}
+#textoNumProductosCarrito
+{
+  background: #f44336;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-right: 15px;
+  text-align: center;
+  width: 1.5em;
+  font-size: 10px;
+  position: absolute;
+  bottom: 25px;
+  left: 95px;
+}
+
+body
+{
+  margin: 0;
+}
+.input-field .prefix.active
+{
+  color: #0091ea !important;
+}
+
+.input-field input:focus + label
+{
+  color: #0091ea !important;
+}
+
+.row .input-field input:focus
+{
+   border-bottom: 1px solid #0091ea !important;
+   box-shadow: 0 1px 0 0 #0091ea !important
+}
+
+.input-field textarea:focus + label
+{
+  color: #0091ea !important;
+}
+
+.row .input-field textarea:focus
+{
+  border-bottom: 1px solid #0091ea !important;
+  box-shadow: 0 1px 0 0 #0091ea !important;
+}
+.slider .indicators .indicator-item.active
+{
+  background-color: #0091ea !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span
+{
+  color: #0091ea !important;
+}

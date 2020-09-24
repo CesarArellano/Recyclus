@@ -1,0 +1,177 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.section {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+
+.textoNavbar{
+  font-family: Impact;
+}
+main {
+  flex: 1;
+}
+
+footer{
+  width: 100%;
+}
+.parallax-container {
+  height: 360px;
+}
+.flow-text{
+  font-size: 1.11em;
+}
+.logoRecyclus{
+  width: 320px;
+  height:320px;
+  position: relative;
+  top: 20px;
+}
+#sloganMobile{
+  position: relative;
+  top: 35px;
+}
+.seccionImagen{
+  width: 220px;
+  height: 220px;
+}
+
+#logoRecyclus{
+  width: 300px;
+  height: 290px;
+}
+#misionImagen{
+  width: 400px;
+  height: 240px;
+}
+#visionImagen{
+  width: 400px;
+  height: 240px;
+}
+.textoFooter{
+  font-size: 30px;
+}
+
+@media screen and (min-width: 993px){
+  nav .brand-logo {
+    left: 15px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 992px){
+  .textoFooter{
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 331px) and (max-width: 600px){
+  .logoRecyclus{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 25px;
+  }
+  .parallax-container {
+    height: 310px;
+  }
+  .seccionImagen{
+    width: 200px;
+    height: 200px;
+  }
+  #logoRecyclus{
+    width: 200px;
+    height: 190px;
+  }
+  #misionImagen{
+    width: 230px;
+    height: 135px;
+  }
+  #visionImagen{
+    width: 230px;
+    height: 135px;
+  }
+  #textoFormContact{
+    font-size: 18px;
+  }
+  .textoFooter{
+    font-size: 24px;
+  }
+
+}
+@media screen and (max-width: 330px){
+  .logoRecyclus{
+    width: 180px;
+    height:180px;
+    position: relative;
+    top: 20px;
+  }
+  .parallax-container {
+    height: 320px;
+  }
+  #sloganMobile{
+    position: relative;
+    top: 20px;
+  }
+  .seccionImagen{
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.input-field .prefix.active
+{
+  color: #0091ea !important;
+}
+.input-field input:focus + label
+{
+  color: #0091ea !important;
+}
+/* label underline focus color */
+.row .input-field input:focus
+{
+  border-bottom: 1px solid #0091ea !important;
+  box-shadow: 0 1px 0 0 #0091ea !important
+}
+.input-field textarea:focus + label
+{
+  color: #0091ea !important;
+}
+
+.row .input-field textarea:focus
+{
+  border-bottom: 1px solid #0091ea;
+  box-shadow: 0 1px 0 0 #0091ea;
+}
+.slider .indicators .indicator-item.active
+{
+  background-color: #0091ea !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #0091ea !important;
+}
+
+
+.social-left{
+  /*las imágenes usadas tienen width de 48px*/
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 5px;
+}
+.social-right{
+  /*las imágenes usadas tienen width de 48px*/
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+}
+#textoSocial{
+  position: absolute;
+}
+
+.nocturno{
+  background-color: #19232b !important;
+}
