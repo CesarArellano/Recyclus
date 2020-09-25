@@ -75,6 +75,71 @@ function resultadoBusquedaContribucionesD(texto)
   });
 }
 
+function aprobarContribucion(tContribucion,iContribucion){
+  $.ajax(
+  {
+    type: 'POST',
+    url: 'aprobarContribucion.php', //URL a donde se redirecciona
+    data: {tipoContribucion: tContribucion, idContribucion: iContribucion}, // Inicializa el objeto con la información (del submit)del formulario.
+    dataType : 'json',
+    success: function(data) // Después de enviar los datos se muestra la respuesta del servidor.
+    {
+      if(data.alerta == "error") // título de acuerdo al tipo de alerta
+        titulo = "Ups...";
+      else
+        titulo = "Bien hecho!";
+      swal(
+      {
+        type: data.alerta,
+        title: titulo,
+        html: data.mensaje,
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Ok!'
+      }).then(function ()
+      {
+        if(data.apartado = 'actualizar'){
+          if(tContribucion == 1)
+            resultadoBusquedaContribucionesT();
+          if(tContribucion == 2)
+            resultadoBusquedaContribucionesD();
+        }
+      });
+      $(document).click(function()
+      {
+        if(data.apartado = 'actualizar'){
+          if(tContribucion == 1)
+            resultadoBusquedaContribucionesT();
+          if(tContribucion == 2)
+            resultadoBusquedaContribucionesD();
+        }
+      });
+      $(document).keyup(function(e)
+      {
+        if (e.which == 27) //Si se da enter
+        {
+          if(data.apartado = 'actualizar'){
+            if(tContribucion == 1)
+              resultadoBusquedaContribucionesT();
+            if(tContribucion == 2)
+              resultadoBusquedaContribucionesD();
+          }
+        }
+      });
+    },
+    error : function(xhr, status) // Si hubo error, despliega mensaje.
+    {
+      swal( // Se inicializa sweetalert2
+      {
+        title: "Ups...",
+        type: "error",
+        html: "Error del servidor, intente de nuevo",
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Ok!'
+      });
+    }
+  });
+}
+
 $(document).ready(function()
 {
   $(resultadoBusquedaUsuarios());
@@ -247,5 +312,63 @@ $(document).ready(function()
             confirmButtonText: 'Ok!'
         });
       }
+  });
+  $("#formAprobar").on('submit', function(e)
+  {
+    e.preventDefault();
+    let titulo;
+    $.ajax(
+    {
+      type: 'POST',
+      url: 'actualizarContribucion.php', //URL a donde se redirecciona
+      data: new FormData(this), // Inicializa el objeto con la información (del submit)del formulario.
+      dataType : 'json',
+      processData: false,
+      contentType: false,
+      cache: false,
+      success: function(data) // Después de enviar los datos se muestra la respuesta del servidor.
+      {
+        if(data.alerta == "error") // título de acuerdo al tipo de alerta
+          titulo = "Ups...";
+        else
+          titulo = "Bien hecho!";
+        swal(
+        {
+          type: data.alerta,
+          title: titulo,
+          html: data.mensaje,
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'Ok!'
+        }).then(function ()
+        {
+          if(data.apartado == 'index')
+            location.href = 'index.php';
+        });
+        $(document).click(function()
+        {
+          if(data.apartado == 'index')
+            location.href = 'index.php';
+        });
+        $(document).keyup(function(e)
+        {
+          if (e.which == 27) //Si se da enter
+          {
+            if(data.apartado == 'index')
+              location.href = 'index.php';
+          }
+        });
+      },
+      error : function(xhr, status) // Si hubo error, despliega mensaje.
+      {
+        swal( // Se inicializa sweetalert2
+        {
+          title: "Ups...",
+          type: "error",
+          html: "Error del servidor, intente de nuevo",
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'Ok!'
+        });
+      }
+    });
   });
 });

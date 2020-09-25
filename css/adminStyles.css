@@ -101,16 +101,6 @@ header, main, footer
   color: #0091ea !important;
 }
 
-#texto-boton-imagen
-{
-  position:relative;
-  left:16px;
-}
-#Icono_Imagen
-{
-   position:absolute;
-   left: 2px;
-}
 #logoNav
 {
   margin-right: 10px;

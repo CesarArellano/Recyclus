@@ -29,8 +29,7 @@
         </div>
         <div class='card-reveal'>
           <span class='card-title grey-text text-darken-4'><i class='material-icons right'>close</i>Información</span>
-          <p>En esta opción usted podrá retirar dinero a través de una tarjeta de crédito o débito, entre más puntos más dinero obtendrá.</p>
-          <p>Sigue aportando al ambiente.</p>
+          <p class='flow-text center-align'>+ Puntos = + Dinero</p><p>Canjea tus puntos acumulados por dinero que transferiremos a tu cuenta de preferencia (CBU o CVU) y sigue contribuyendo al cuidado del medio ambiente junto a Recyclus!</p>
         </div>
       </div>
     </div>
@@ -45,7 +44,7 @@
         </div>
         <div class='card-reveal'>
           <span class='card-title grey-text text-darken-4'><i class='material-icons right'>close</i>Información</span>
-          <p>En esta opción obtedrá descuentos en.</p>
+          <p class='flow-text center-align'>+ Puntos = + Descuentos</p><p>Aprovecha los beneficios en la compra de nuevos productos al utilizar tus puntos acumulados y continúa cuidando del medio ambiente junto a Recyclus!</p>
         </div>
       </div>
     </div>

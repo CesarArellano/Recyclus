@@ -107,12 +107,23 @@
   $sentencia->bind_param('s',$idUsuario);
   $sentencia->execute();
   $resultado = $sentencia->get_result();
+  $sentencia->close();
   if($resultado->num_rows == 1)
   {
-    $sentencia->close();
-    while($campos = $resultado->fetch_assoc()){
-      $resultadoNotificaciones.= "<h5 class='center-align'>Hay una notificacion: ".$campos['contenido']."</h5>";
+    $resultadoNotificaciones .= "<table class='responsive-table highlight centered'>
+        <thead>
+          <th>Notificación</th>
+          <th>Tipo Contribucion</th>
+          <th>ID Contribución</th>
+        </thead>
+        <tbody>";
+    while($row = $resultado->fetch_assoc()){
+      $resultadoNotificaciones .= "<tr>
+        <td>".$row['contenido']."</td>
+        <td>".$row['tipoContribucion']."</td>
+        <td>".$row['idContribucion']."</td></tr>";
     }
+    $resultadoNotificaciones.= "</tbody></table>";
   }
   else
   {

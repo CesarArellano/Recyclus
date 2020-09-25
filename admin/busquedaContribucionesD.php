@@ -21,7 +21,6 @@
        <th>Tipo Producto</th>
        <th>Peso</th>
        <th></th>
-       <th></th>
       </thead>
       <tbody>";
       while ($row = $sentencia->fetch_assoc())
@@ -33,12 +32,12 @@
           <td>".$row['tipoProducto']."</td>
           <td>".$row['peso']."</td>";
         if($row['estadoContribucion'] == 0){
-          $salida .= "<td><a href='#' onclick='aprobarContribucion(1,".$row['idContribucionT'].") target='_blank'>Aprobar</a></td>";
+          $salida .= "<td><a class='btn waves-effect waves-light blue darken-2' href='confirmarCitaContribucion.php?tipo=2&idC=".$row['idContribucionD']."' target='_blank'>Confirmar cita</a></td>
+          <td><button class='btn waves-effect waves-light' onclick='aprobarContribucion(2,".$row['idContribucionD'].")'target='_blank'>Aprobar</button></td></tr>";
         }
         else{
-          $salida .= "<td><a class='grey-text'>Aprobado</a></td>";
+          $salida .= "<td><a class='btn waves-effect waves-light' disabled>Confirmar cita</a></td><td><a class='btn waves-effect waves-light' disabled>Aprobado</a></td></</tr>";
         }
-        $salida .= "<td><a href='verMas.php?id=".$row['idUsuario']."'target='_blank'>Ver más</a></td></tr>";
       }
       $salida.= "</tbody></table>";
  }

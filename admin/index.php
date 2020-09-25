@@ -52,13 +52,13 @@
                       <h6 align="justify"><b>Dentro de este apartado te ofrecemos una breve explicación de lo que puedes hacer en cada uno de los apartados del sistema.</b></h6>
                     </li>
                     <li class="collection-item">
-                      <h6 align="justify"><b>Estadísticas: </b>---</h6>
+                      <h6 align="justify"><b>Estadísticas: </b>En este área aparecerá la evolución de nuestras aportaciones. Por ejemplo, si este mes hemos reciclado más que el anterior, o si en esta semana hemos aportado más residuos orgánicos o inorgánicos.</h6>
                     </li>
                     <li class="collection-item">
-                      <h6 align="justify"><b>Agregar: </b>En este apartado se podrán registrar administradores.</h6>
+                      <h6 align="justify"><b>Agregar: </b>En este apartado podremos agregar más usuarios a nuestra plataforma.</h6>
                     </li>
                     <li class="collection-item">
-                      <h6 align="justify"><b>Búsqueda: </b> ---- </h6>
+                      <h6 align="justify"><b>Búsqueda: </b>Con esta funcionalidad podemos buscar diferentes perfiles de usuarios.</h6>
                     </li>
                   </ul>
                 </div>
@@ -69,6 +69,7 @@
       </div>
       <div id="estadisticasContenido">
         <h2>Estadísticas</h2>
+        <h5 class="flow-text center-align">Contribuciones del mes actual: 10</h5>
       </div>
       <div id="agregarUsuarioContenido">
         <div class="row"> <!--Habilita sistema de rejilla (12 columnas) Elemento Padre / Principal-->

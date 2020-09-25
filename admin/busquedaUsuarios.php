@@ -31,8 +31,7 @@
           <td>".$row['apMaternoUsuario']."</td>
           <td>".$row['email']."</td>
           <td>".$row['telefonoUsuario']."</td>
-          <td>".$row['nombreRol']."</td>
-          <td><a href='modificarUsuarios.php?id=".$row['idUsuario']."'target='_blank'>Modificar información</a></td></tr>";
+          <td>".$row['nombreRol']."</td></tr>";
       }
       $salida.= "</tbody></table>";
  }

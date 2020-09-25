@@ -26,7 +26,7 @@
   }
   else
   {
-    echo json_encode(array('mensaje' => "Has ayudado a cuidar el ambiente y has aportado a la economía circular. Te llegará un correo confirmando tu cita y luego de entregrarlo y de ser verificardo recibirás tus Recypuntos.
+    echo json_encode(array('mensaje' => "Has ayudado a cuidar el ambiente y has aportado a la economía circular. Te llegará un correo confirmando tu cita y luego de entregrarlo y de ser verificado recibirás tus Recypuntos.
 Sigue aportando al ambiente, vas por el buen camino.",'apartado'=> "cuenta", 'alerta' => "success"));
   }
   $sentencia->close();

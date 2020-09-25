@@ -68,7 +68,7 @@
                 </div>
                 <div class="input-field col l4 m6 s12">
                   <i class="material-icons prefix">directions</i>
-                  <input type="text" class="validate" id="inputCalle" name="inputCalle" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}"  maxlength="50" required>
+                  <input type="text" class="validate" id="inputCalle" name="inputCalle" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð0-9 ]{2,50}"  maxlength="50" required>
                   <label for="inputCalle" data-error="Ingrese caracteres alfabéticos" data-success="Correcto">Calle</label>
                 </div>
                 <div class="input-field col l4 m6 s12">
