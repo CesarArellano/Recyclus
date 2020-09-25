@@ -3,8 +3,6 @@
   if(isset($_SESSION['tipoUsuario']) && $_SESSION['tipoUsuario'] == 1) //isset comprueba si la variable existe(si la sesión de un usuario ya está abierta)
     header('location: admin/index.php'); //redirecciona a una página
   if(isset($_SESSION['tipoUsuario']) && $_SESSION['tipoUsuario'] == 2)
-    header('location: asesor/index.php'); //redirecciona a una página
-  if(isset($_SESSION['tipoUsuario']) && $_SESSION['tipoUsuario'] == 3)
     header('location: user/index.php'); //redirecciona a una página
 ?>
 <!DOCTYPE html> <!--HTML 5-->
@@ -35,7 +33,7 @@
       <div class="row"> <!--Habilita sistema de rejilla (12 columnas) Elemento Padre / Principal-->
         <div class="card hoverable card-opacity col s12 animate__animated animate__fadeIn animate__delay-2s"> <!--Tarjeta que contiene los inputs-->
           <h3 class="center-align">Inicio de sesión</h3>
-          <form method="POST" id="formLogin">
+          <form id="formLogin">
             <div class="card-content"> <!--Contenido de la tarjeta-->
               <div class="row"> <!--Habilita sistema de rejilla (12 columnas) Elementos hijo / secundarios-->
                 <div class="input-field col l6 m6 s12">

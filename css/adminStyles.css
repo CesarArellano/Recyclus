@@ -1,0 +1,119 @@
+html
+{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,'Nanum Gothic', Arial, "Lucida Grande", sans-serif !important;
+}
+.button-collapse
+{
+    display: none;
+}
+header, main, footer
+{
+    padding-left: 300px;
+}
+@media only screen and (max-width : 992px)
+{
+    header, main, footer
+    {
+      padding-left: 0;
+    }
+    .button-collapse
+    {
+      display: inherit;
+    }
+}
+
+@media only screen and (min-width : 601px)
+{
+     .margen
+     {
+       margin-left: 30px;
+       margin-right: 30px;
+     }
+}
+@media only screen and (max-width: 600px )
+{
+  .margen
+  {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.tabs
+{
+  width: 90%;
+  color:#0091ea;
+}
+.tabs .tab a
+{
+  color:#0091ea;
+}
+.tabs .tab a:hover
+{
+  background-color:#eee;
+  color:#0091ea;
+}
+
+.tabs .tab a.active
+{
+  background-color: #0091ea;
+  color: white;
+}
+
+.tabs .indicator
+{
+  background-color: #81c784;
+}
+
+.input-field .prefix.active
+{
+  color: #0091ea !important;
+}
+
+.input-field input:focus + label
+{
+  color: #0091ea !important;
+}
+
+.row .input-field input:focus
+{
+   border-bottom: 1px solid #0091ea !important;
+   box-shadow: 0 1px 0 0 #0091ea !important
+}
+
+.input-field textarea:focus + label
+{
+  color: #0091ea !important;
+}
+
+.row .input-field textarea:focus
+{
+  border-bottom: 1px solid #0091ea !important;
+  box-shadow: 0 1px 0 0 #0091ea !important;
+}
+.slider .indicators .indicator-item.active
+{
+  background-color: #0091ea !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span
+{
+  color: #0091ea !important;
+}
+
+#texto-boton-imagen
+{
+  position:relative;
+  left:16px;
+}
+#Icono_Imagen
+{
+   position:absolute;
+   left: 2px;
+}
+#logoNav
+{
+  margin-right: 10px;
+  margin-top: 6px;
+  height: 55px;
+}

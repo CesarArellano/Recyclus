@@ -8,7 +8,7 @@
   $password = $conexionMySQL->real_escape_string($password);
 
   $sentencia = $conexionMySQL->stmt_init();
-  $sentencia->prepare("SELECT idUsuario,idRol,password FROM usuarios WHERE email = ? AND estado = 1");
+  $sentencia->prepare("SELECT idUsuario,idRol,password FROM usuarios WHERE email = ? AND activo = 1");
   $sentencia->bind_param('s',$email);
   $sentencia->execute();
   $resultado = $sentencia->get_result();
@@ -22,8 +22,6 @@
       $_SESSION['tipoUsuario'] = intval($campos['idRol']);
       if($_SESSION['tipoUsuario'] == 1)
         $respuesta = json_encode(array('mensaje' => "Bienvenido al sistema",'pagina' => "admin", 'alerta' => "success")); // Conversión de Array a JSON
-      elseif($_SESSION['tipoUsuario'] == 2)
-        $respuesta = json_encode(array('mensaje' => "Bienvenido al sistema",'pagina' => "asesor", 'alerta' => "success")); // Conversión de Array a JSON
       else
         $respuesta = json_encode(array('mensaje' => "Bienvenido al sistema",'pagina' => "user", 'alerta' => "success"));
       echo $respuesta;

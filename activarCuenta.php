@@ -10,7 +10,7 @@
   if($idUser != 0)
   {
     $sentencia = $conexionMySQL->stmt_init();
-    $sentencia->prepare("UPDATE usuarios SET estado = 1 WHERE idUsuario = ?");
+    $sentencia->prepare("UPDATE usuarios SET activo = 1 WHERE idUsuario = ?");
     $sentencia->bind_param('i',$idUser);
     if(!$sentencia->execute())
     {
@@ -38,8 +38,8 @@
   <meta charset="UTF-8"> <!--Codificación al español-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala los elementos para cualquier dispositvo (celular,ordenador,etc) -->
   <title>Activación de cuenta</title> <!--Titulo de la pestaña-->
-  <link rel="shortcut icon" href="images/iconoEcommerce.jpg"> <!--icono de la pestaña-->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="images/logoRecyclus.png"> <!--icono de la pestaña-->
+  <link rel="stylesheet" href="css/mainStyles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.3.2/sweetalert2.css">
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><!--Biblioteca de funciones que simplifica el usor de JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.3.2/sweetalert2.js" charset="utf-8"></script>

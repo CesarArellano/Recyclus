@@ -14,7 +14,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><!--Biblioteca de funciones que simplifica el usor de JS-->
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.3.2/sweetalert2.js" charset="utf-8"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/mainScript.js"></script>
 </head>
 <body>
   <main>
@@ -31,23 +31,23 @@
           <div class="row"> <!--Habilita sistema de rejilla (12 columnas) Elementos hijo / secundarios-->
             <div class="input-field col l6 m6 s12">
               <i class="material-icons prefix">account_circle</i>
-              <input type="text" class="validate" name="nombreCliente" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}"  maxlength="50" required>
+              <input type="text" class="validate" name="nombreUsuario" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}"  maxlength="50" required>
               <label for="nombreCliente">Ingrese su(s) nombre(s)</label>
             </div>
             <div class="input-field col l6 m6 s12">
               <i class="material-icons prefix">account_circle</i>
-              <input type="text" class="validate" name="apPaternoCliente" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}"  maxlength="50" required>
+              <input type="text" class="validate" name="apPaternoUsuario" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}"  maxlength="50" required>
               <label for="apPaternoCliente">Ingrese su apellido paterno</label>
             </div>
             <div class="input-field col l6 m6 s12">
               <i class="material-icons prefix">account_circle</i>
-              <input type="text" class="validate" name="apMaternoCliente" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}"  maxlength="50" required>
+              <input type="text" class="validate" name="apMaternoUsuario" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ]{2,50}"  maxlength="50" required>
               <label for="apMaternoCliente">Ingrese su apellido materno</label>
             </div>
             <div class="input-field col l6 m6 s12">
               <i class="material-icons prefix">phone</i>
-              <input type="tel" class="validate" name="telefono" pattern="[0-9]{1,10}"  maxlength="10" required>
-              <label for="icon_telephone">Ingrese su teléfono (10 dígitos)</label>
+              <input type="tel" class="validate" name="telefono" pattern="[0-9+]{1,14}"  maxlength="14" required>
+              <label for="icon_telephone">Ingrese su teléfono</label>
             </div>
             <div class="input-field col l6 m6 s12">
               <i class="material-icons prefix">email</i>

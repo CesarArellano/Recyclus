@@ -2,32 +2,74 @@ html
 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,'Nanum Gothic', Arial, "Lucida Grande", sans-serif !important;
 }
-
-
-@media screen and (min-width: 1201px){
-
+#map {
+width: 100%;
+height: 250px;
+border: 1px solid #000;
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px){
-
-}
-#textoNumProductosCarrito
+@media only screen and (max-width: 600px)
 {
-  background: #f44336;
-  border-radius: 0.8em;
-  -moz-border-radius: 0.8em;
-  -webkit-border-radius: 0.8em;
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 1.5em;
-  margin-right: 15px;
-  text-align: center;
-  width: 1.5em;
-  font-size: 10px;
-  position: absolute;
-  bottom: 25px;
-  left: 95px;
+  .logoEncabezado
+  {
+    width: 50px;
+    position: relative;
+    top: 3px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 912px)
+{
+  .logoEncabezado
+  {
+    width: 50px;
+    position: relative;
+    top: 8px;
+  }
+  #textoNumProductosCarrito
+  {
+    background: #f44336;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.5em;
+    font-size: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 215px;
+  }
+}
+@media only screen and (min-width: 913px)
+{
+  .logoEncabezado
+  {
+    width: 50px;
+    position: relative;
+    top: 10px;
+  }
+  #textoNumProductosCarrito
+  {
+    background: #f44336;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.5em;
+    font-size: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 220px;
+  }
 }
 
 body
